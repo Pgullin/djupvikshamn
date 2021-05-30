@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+    <meta charset="UTF-8" name="viewport" content= "width = device-width, initial-scale = 1,
+    maximum-scale = 2" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 class="header-title">Djupvik</h1>
+        </div>
+    </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Hem</a>
+                </li>
+                <li>
+                    <a href="info.html">Info</a>
+                </li>
+                <li>
+                    <a href="guest.html">Gästhamn</a>
+                </li>
+                <li>
+                    <a href="history.html">Historia</a>
+                </li>
+                <li>
+                    <a class="active" href="contact.html">Kontakt</a>
+                </li>
+                <li>
+                    <a href="members.html">För medlemmar</a>
+                </li>
+                <li>
+                    <a href="english.html">English</a>
+                </li>
+            </ul>
+
+        </nav>
+    
+    <div class="container">
+
+        <section>
+            <h2>Kontaktformulär</h2>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="Header">Rubrik för ärendet *</label> <br>
+                    <input type="text" name="header" id="Header" required size="35" maxlength="30" /> </p>
+                <p>
+                    <label for="Name">Namn *</label> <br>
+                    <input type="text" name="name" id="Name" required size="35" maxlength="30" /> </p>
+                <p>
+                    <label for="Message">Ditt ärende *</label> <br>
+                    <textarea name="message" rows="5" cols="60" id="Message">
+                                                                    Skriv ditt ärende här..
+                                                                    </textarea>
+                </p>
+                <p><label>Vad gäller ärendet?</label>
+                    Båtplats:
+                    <input type="radio" name="boat" />
+                    Medlemskap:
+                    <input type="radio" name="member" />
+                    Övrigt:
+                    <input type="radio" name="other" />
+
+                </p>
+                <p>
+                    <label for="about">Hur vill du bli kontaktad? *</label> <br>
+                    <select name="about">
+                        <option value="mail">Mail</option>
+                        <option value="phone">Telefon</option>
+                        <option value="no">Kontakta inte mig</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="tel">Telefonnummer *</label> <br>
+                    <input type="tel" name="tel">
+                </p>
+
+                <p>
+                    <label for="myEmail">E-post *</label> <br>
+                    <input type="email" name="myEmail" id="myEmail" required pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}"
+                        placeholder="du@dindomän.com" size="35" maxlength="30" />
+                </p>
+
+
+
+
+            </form>
+           1
+           
+
+
+
+        </section>
+
+
+
+    </div>
+    <footer>
+        <p>Är du medlem i hamnföreningen och inte har tillgång till medlemssidan? Skicka en e-post till sekreteraren (info@djupvikshamn.se
+            ) </p>
+    </footer>
+
+
+
+
+
+    <script src="../js/index.js" type="text/javascript"></script>
+</body>
+
+</html>

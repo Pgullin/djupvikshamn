@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	
+}
+/* End of global reset */
+
+
+
+
+/* Global styling */
+
+
+
+header {
+  background-image: url("/images/layout/header.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+		height: 0;
+		padding-top: 21.7%;
+		position: relative;
+}
+
+.header-title{
+	position:absolute; top:10%; bottom:0; left:5%; right:0;
+	font-size: 8vw;
+	text-align: left;
+	font-family: courier;
+}
+
+body, ul li a{
+font-family: 'fjalla one',sans-serif;
+}
+
+
+
+nav li a{
+	text-transform: uppercase;
+	padding: 5px;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+p, h2, h3,h4{
+	width: 80%;
+	margin: 0 auto;
+	
+}
+a[href^="mailto:"]
+{ 
+	text-decoration:none;
+	color: #1f1f1f;
+	
+  
+}
+a:hover, a:focus{
+background-color: #cdc9c5;
+}
+
+
+
+footer{
+	border: 0.1em solid #FF9933;
+	margin-top: 1em;
+	background-color: #eeeeee;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+	float: right;
+
+}
+/* End of global styling */
+
+	
+
+
+
+@media(max-width: 640px)
+{
+
+	h2{
+		margin-top: 1em;
+		font-size: 1.5em;
+	}
+	h3{
+		margin-top: 1em;
+		font-size: 1.2em;
+	}
+	h4{
+		margin-top:0.6em;
+		
+	}
+
+
+	p{
+		margin-top: 1em;
+		line-height: 1.5em;
+	}
+	
+	
+	li a {
+    display: block;
+		width: 60%;
+		margin: 0 auto;
+		background-color: #ffffff;
+		color: #1f1f1f;
+		border: 3px outset #dddddd;
+		text-decoration: none;
+		
+	
+	}
+	
+	.textContent{
+	
+		margin-top: 1em;
+	}
+
+
+	aside{
+		width:80%;
+		margin: 0 auto;
+		border-top: 0em none #ffffff;
+		
+	}
+	aside img{
+		width:100%;
+		margin-top:1em;
+	}
+	.active{
+text-decoration:underline #cdc9c5;
+
+	}
+
+
+} 
+
+/* End of breakpoint <480 px */
+
+
+
+@media(min-width: 641px) and (max-width: 1200px)
+{
+
+nav{
+	width:100%;
+	position: sticky;
+	top: 0;
+	border-bottom: 0.3em solid #FF9933;
+
+	background-color: #dddddd;
+	display: inline-block;
+	text-align: center;
+}
+nav ul{
+	display: inline-block;
+	padding: 0.3em;
+	margin-left: 0;
+	width: 100%;
+	
+}
+
+
+nav li{
+	/*width: 80%;*/
+padding: 0.2em;
+	display: inline-block;
+}
+
+
+li a {
+	display: block;
+	margin: 0 auto;
+	background-color: #ffffff;
+	color: #1f1f1f;
+	text-decoration: none;
+	
+	
+		border: 3px outset #dddddd;
+
+}
+.container{
+	margin: 5em auto; 
+	width: 80%;
+	clear:both;
+	display: grid;
+	grid-template-columns: repeat(12 ,1fr);
+}
+.aside-left{
+	grid-column:2/4;
+	
+}
+.aside-right{
+	grid-column:9/12;
+}
+
+.textContent-right{
+	grid-column:4/12
+}
+
+.textContent-left{
+	grid-column:1/9
+}
+
+
+
+
+} 
+
+
+/*end of breakpoint 641 px - 1200px*/
+
+
+
+
+
+@media(min-width: 1201px){
+
+	nav{
+		width:100%;
+	}
+	
+	nav li{
+		width: 80%;
+	}
+	li a {
+		display: block;
+		width: auto;
+		margin: 0 auto;
+		background-color: #ffffff;
+		color: #1f1f1f;
+		text-decoration: none;
+		float:left;	
+	}
+
+	.container{
+		width: 80%;
+		clear:both;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+	.aside-left{
+		grid-column:2/4;
+		
+	}
+	.aside-right{
+		grid-column:9/12;
+	}
+	
+	.textContent-right{
+		grid-column:4/12
+	}
+	
+	.textContent-left{
+		grid-column:1/9
+	}
+	/*
+	.content{
+		border-top: 0.3em solid #FF9933;
+		margin-top: 1em;
+	}*/
+
+
+
+}
