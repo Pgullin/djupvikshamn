@@ -86,11 +86,26 @@ nav li a{
 	text-align: center;
 }
 
+
 p, h2, h3,h4{
-	width: 80%;
-	margin: 0 auto;
-	
+	margin-top: 10px;
+	margin-bottom: 5px;
 }
+
+p{
+	font-size: 16px;
+}
+h2{
+	font-size: 24px;
+}
+h3{
+	font-size: 20px;
+}
+h4{
+	font-size: 18px;
+}
+
+
 a[href^="mailto:"]
 { 
 	text-decoration:none;
@@ -105,7 +120,8 @@ background-color: #cdc9c5;
 
 
 footer{
-	border: 0.1em solid #FF9933;
+	border-top: 0.1em solid #FF9933;
+	border-bottom: 0.1em solid #FF9933;
 	margin-top: 1em;
 	background-color: #eeeeee;
 }
@@ -116,6 +132,10 @@ img {
 	float: right;
 
 }
+
+section, aside, footer{
+	padding: 1%;
+}
 /* End of global styling */
 
 	
@@ -125,12 +145,13 @@ img {
 @media(max-width: 640px)
 {
 
+	/*
 	p, h2, h3,h4{
 		width: 80%;
 		margin: 0 auto;
 		
 		
-	}
+	}*/
 
 	/* section{
 		margin-top: 1rem;
@@ -192,7 +213,7 @@ text-decoration:underline #cdc9c5;
 
 } 
 
-/* End of breakpoint <480 px */
+/* End of breakpoint <640 px */
 
 
 
@@ -248,6 +269,18 @@ li a {
 .aside-right{
 	grid-column:9/12;
 }
+
+aside img{
+	width:100%;
+	margin-top:1em;
+}
+/*
+img {
+	max-width:100%;
+	height:auto;
+	float: right;
+
+}*/
 
 .textContent-right{
 	grid-column:4/12
