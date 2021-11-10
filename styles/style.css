@@ -125,14 +125,14 @@ footer{
 	margin-top: 1em;
 	background-color: #eeeeee;
 }
-
+/*
 img {
 	max-width:100%;
 	height:auto;
 	float: right;
 
 }
-
+*/
 section, aside, footer{
 	padding: 1%;
 }
@@ -144,38 +144,6 @@ section, aside, footer{
 
 @media(max-width: 640px)
 {
-
-	/*
-	p, h2, h3,h4{
-		width: 80%;
-		margin: 0 auto;
-		
-		
-	}*/
-
-	/* section{
-		margin-top: 1rem;
-		background-color: #FF9933;
-	}
-	h2{
-		margin-top: 1em;
-		font-size: 1.5em;
-	}
-	h3{
-		margin-top: 1em;
-		font-size: 1.2em;
-	}
-	h4{
-		margin-top:0.6em;
-		
-	}
-
-
-	p{
-		margin-top: 1em;
-		line-height: 1.5em;
-	} */
-	
 	
 	li a {
     display: block;
@@ -185,8 +153,6 @@ section, aside, footer{
 		color: #1f1f1f;
 		border: 3px outset #dddddd;
 		text-decoration: none;
-		
-	
 	}
 	
 	.textContent{
@@ -217,7 +183,7 @@ text-decoration:underline #cdc9c5;
 
 
 
-@media(min-width: 641px) and (max-width: 1200px)
+@media(min-width: 641px)
 {
 
 nav{
@@ -235,16 +201,13 @@ nav ul{
 	padding: 0.3em;
 	margin-left: 0;
 	width: 100%;
-	
 }
-
 
 nav li{
 	/*width: 80%;*/
-padding: 0.2em;
+padding: 0.3em;
 	display: inline-block;
 }
-
 
 li a {
 	display: block;
@@ -252,102 +215,39 @@ li a {
 	background-color: #ffffff;
 	color: #1f1f1f;
 	text-decoration: none;	
-	border: 3px outset #dddddd;
+	border: 5px outset #dddddd;
+}
+.active {
+	/*background-color: #cccccc;*/
+	border-bottom: 5px outset #FF9933;
 }
 
 .container{
 	margin: 2em auto; 
-	width: 100%;
+	width: 90%;
 	clear:both;
 	display: grid;
 	grid-template-columns: repeat(12 ,1fr);
 }
 .aside-left{
-	grid-column:2/4;
+	grid-column:1/4;
 	
 }
 .aside-right{
-	grid-column:9/12;
+	grid-column:9/13;
 }
 
 aside img{
 	width:100%;
 	margin-top:1em;
 }
-/*
-img {
-	max-width:100%;
-	height:auto;
-	float: right;
-
-}*/
 
 .textContent-right{
-	grid-column:4/12
+	grid-column:5/12
 }
 
 .textContent-left{
 	grid-column:1/9
 }
-
-
-
-
-} 
-
-
-/*end of breakpoint 641 px - 1200px*/
-
-
-
-
-
-@media(min-width: 1201px){
-
-	nav{
-		width:100%;
-	}
-	
-	nav li{
-		width: 80%;
-	}
-	li a {
-		display: block;
-		width: auto;
-		margin: 0 auto;
-		background-color: #ffffff;
-		color: #1f1f1f;
-		text-decoration: none;
-		float:left;	
-	}
-
-	.container{
-		width: 80%;
-		clear:both;
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-	}
-	.aside-left{
-		grid-column:2/4;
-		
-	}
-	.aside-right{
-		grid-column:9/12;
-	}
-	
-	.textContent-right{
-		grid-column:4/12
-	}
-	
-	.textContent-left{
-		grid-column:1/9
-	}
-	/*
-	.content{
-		border-top: 0.3em solid #FF9933;
-		margin-top: 1em;
-	}*/
-
-
 
 }
