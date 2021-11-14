@@ -81,7 +81,7 @@ font-family: 'fjalla one',sans-serif;
 
 nav li a{
 	text-transform: uppercase;
-	padding: 5px;
+	padding: 0.1vw;
 	font-size: 1.2em;
 	text-align: center;
 }
@@ -142,7 +142,7 @@ section, aside, footer{
 
 
 
-@media(max-width: 640px)
+@media(max-width: 670px)
 {
 	
 	li a {
@@ -151,7 +151,7 @@ section, aside, footer{
 		margin: 0 auto;
 		background-color: #ffffff;
 		color: #1f1f1f;
-		border: 3px outset #dddddd;
+		border: 3.5px outset #dddddd;
 		text-decoration: none;
 	}
 	
@@ -173,39 +173,37 @@ section, aside, footer{
 	}
 	.active{
 text-decoration:underline #cdc9c5;
-
-	}
-
+border-bottom: 3.5px outset #FF9933;
+border-right: 3.5px outset #FF9933;
 
 } 
+}
+/* End of breakpoint <670 px */
 
-/* End of breakpoint <640 px */
 
-
-
-@media(min-width: 641px)
+@media(min-width: 670px)
 {
 
 nav{
-	width:100%;
+	width : 100%;
 	position: sticky;
 	top: 0;
-	border-bottom: 0.3em solid #FF9933;
+	border-bottom: 0.3.5em solid #FF9933;
 
-	background-color: #dddddd;
+	background-color: #eeeeee;
 	display: inline-block;
 	text-align: center;
 }
 nav ul{
 	display: inline-block;
-	padding: 0.3em;
+	padding: 0.2em;
 	margin-left: 0;
 	width: 100%;
 }
 
 nav li{
 	/*width: 80%;*/
-padding: 0.3em;
+padding: 0.5vw;
 	display: inline-block;
 }
 
@@ -215,11 +213,13 @@ li a {
 	background-color: #ffffff;
 	color: #1f1f1f;
 	text-decoration: none;	
-	border: 5px outset #dddddd;
+	border: 3px outset #eeeeee;
 }
 .active {
 	/*background-color: #cccccc;*/
-	border-bottom: 5px outset #FF9933;
+	text-decoration:underline #cdc9c5;
+	border-bottom: 3.5px outset #FF9933;
+	border-right: 3.5px outset #FF9933;
 }
 
 .container{
@@ -230,16 +230,18 @@ li a {
 	grid-template-columns: repeat(12 ,1fr);
 }
 .aside-left{
+	margin: 2em auto; 
 	grid-column:1/4;
 	
 }
 .aside-right{
+	margin: 2em auto; 
 	grid-column:9/13;
 }
 
 aside img{
 	width:100%;
-	margin-top:1em;
+	/* margin-top:1em; */
 }
 
 .textContent-right{
@@ -248,6 +250,12 @@ aside img{
 
 .textContent-left{
 	grid-column:1/9
+}
+
+
+.img-left {
+	float: left;
+	margin-right: 1em;
 }
 
 }
