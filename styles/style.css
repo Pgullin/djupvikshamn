@@ -84,6 +84,7 @@ nav li a{
 	padding: 0.1vw;
 	font-size: 1.2em;
 	text-align: center;
+	line-height: 1.4;
 }
 
 
@@ -94,6 +95,8 @@ p, h2, h3,h4{
 
 p{
 	font-size: 16px;
+	
+	  
 }
 h2{
 	font-size: 24px;
@@ -124,18 +127,35 @@ footer{
 	border-bottom: 0.1em solid #FF9933;
 	margin-top: 1em;
 	background-color: #eeeeee;
+	text-align: center;
 }
-/*
-img {
-	max-width:100%;
-	height:auto;
-	float: right;
 
+figure img {
+	height:auto;
 }
-*/
+
+figcaption {
+	text-align: center;
+	padding: 2px;
+}
+
 section, aside, footer{
 	padding: 1%;
 }
+
+th {
+	padding: 10px;
+	font-size: 20px;
+	font-style: bold;
+	text-align: left;
+	border-bottom: 1px solid black;
+}
+td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid black;
+	border-radius: 42px;
+  }
 /* End of global styling */
 
 	
@@ -198,13 +218,17 @@ nav ul{
 	display: inline-block;
 	padding: 0.2em;
 	margin-left: 0;
-	width: 100%;
+	width: 99%;
 }
 
-nav li{
+nav li {
 	/*width: 80%;*/
-padding: 0.5vw;
+	padding: 0.5vw;
 	display: inline-block;
+}
+
+nav li a {
+padding: 0.5
 }
 
 li a {
@@ -214,6 +238,7 @@ li a {
 	color: #1f1f1f;
 	text-decoration: none;	
 	border: 3px outset #eeeeee;
+	padding: 0.5vw;
 }
 .active {
 	/*background-color: #cccccc;*/
@@ -257,5 +282,32 @@ aside img{
 	float: left;
 	margin-right: 1em;
 }
+
+.textContent {
+	grid-column: 1/13;
+}
+
+.img-section-center {
+	grid-column: 1/13;
+}
+
+.figure-left{
+	float: left;
+	width: 50%;
+	height: auto;
+}
+
+.figure-right{
+	float: right;
+	width: 50%;
+}
+
+.img-fill-container {
+	width: 95%;
+	padding: 5px;
+	margin: 5px;
+}
+
+
 
 }
