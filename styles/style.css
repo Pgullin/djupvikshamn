@@ -87,17 +87,21 @@ nav li a{
 	line-height: 1.4;
 }
 
+p label{
+	padding-bottom: 20rem;
+}
+
 
 p, h2, h3,h4{
 	margin-top: 10px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 p{
 	font-size: 16px;
-	
-	  
+	margin-bottom: 5px;	  
 }
+
 h2{
 	font-size: 24px;
 }
@@ -113,14 +117,11 @@ a[href^="mailto:"]
 { 
 	text-decoration:none;
 	color: #1f1f1f;
-	
-  
 }
+
 a:hover, a:focus{
 background-color: #cdc9c5;
 }
-
-
 
 footer{
 	border-top: 0.1em solid #FF9933;
@@ -155,6 +156,17 @@ td {
 	text-align: left;
 	border-bottom: 1px solid black;
 	border-radius: 42px;
+  }
+
+  .centered {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	grid-column: 1/13;
+  }
+
+  aside {
+	  margin-top: 0px;
   }
 /* End of global styling */
 
@@ -253,10 +265,12 @@ li a {
 	clear:both;
 	display: grid;
 	grid-template-columns: repeat(12 ,1fr);
+	grid-template-rows: 1fr, 1fr;
 }
 .aside-left{
 	margin: 2em auto; 
 	grid-column:1/4;
+	grid-row-start: 1;
 	
 }
 .aside-right{
@@ -270,7 +284,8 @@ aside img{
 }
 
 .textContent-right{
-	grid-column:5/12
+	grid-column:5/12;
+	grid-row-start: 1;
 }
 
 .textContent-left{
