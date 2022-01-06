@@ -52,7 +52,7 @@ table {
 /* Global styling */
 
 header {
-  background-image: url("https://github.com/Pgullin/djupvikshamn/blob/main/images/layout/header.png"); 
+  background-image: url("../images/header.png"); 
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
